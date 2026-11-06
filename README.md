@@ -1,3 +1,5 @@
+![Logger CI](https://github.com/NiteenDigarse/cpp-logger-library/actions/workflows/ci.yml/badge.svg)
+
 # C++ Logger Library
 
 A lightweight, synchronous, thread-safe logging library built from scratch using **C++17**.
