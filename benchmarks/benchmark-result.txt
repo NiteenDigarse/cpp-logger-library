@@ -1,0 +1,90 @@
+C++ Logger Performance Benchmark
+C++ Standard: C++17
+Build configuration: Record as Release
+
+========================================
+Benchmark: Single-thread enabled logging
+Threads: 1
+Operations per thread: 100000
+Total operations: 100000
+Repetitions: 5
+========================================
+Run 1 | Time: 1.275876 s | Throughput: 78377.52 operations/sec | Accepted: 100000
+Run 2 | Time: 1.298188 s | Throughput: 77030.46 operations/sec | Accepted: 100000
+Run 3 | Time: 1.301505 s | Throughput: 76834.11 operations/sec | Accepted: 100000
+Run 4 | Time: 1.294777 s | Throughput: 77233.36 operations/sec | Accepted: 100000
+Run 5 | Time: 1.275647 s | Throughput: 78391.57 operations/sec | Accepted: 100000
+
+Median throughput: 77233.36 operations/sec
+Expected accepted messages: 100000
+Message verification: PASSED
+
+========================================
+Benchmark: Two-thread enabled logging
+Threads: 2
+Operations per thread: 100000
+Total operations: 200000
+Repetitions: 5
+========================================
+Run 1 | Time: 2.941456 s | Throughput: 67993.55 operations/sec | Accepted: 200000
+Run 2 | Time: 2.963388 s | Throughput: 67490.32 operations/sec | Accepted: 200000
+Run 3 | Time: 3.032923 s | Throughput: 65942.98 operations/sec | Accepted: 200000
+Run 4 | Time: 2.904953 s | Throughput: 68847.93 operations/sec | Accepted: 200000
+Run 5 | Time: 2.963016 s | Throughput: 67498.79 operations/sec | Accepted: 200000
+
+Median throughput: 67498.79 operations/sec
+Expected accepted messages: 200000
+Message verification: PASSED
+
+========================================
+Benchmark: Four-thread enabled logging
+Threads: 4
+Operations per thread: 100000
+Total operations: 400000
+Repetitions: 5
+========================================
+Run 1 | Time: 5.986300 s | Throughput: 66819.23 operations/sec | Accepted: 400000
+Run 2 | Time: 5.965661 s | Throughput: 67050.41 operations/sec | Accepted: 400000
+Run 3 | Time: 5.947913 s | Throughput: 67250.48 operations/sec | Accepted: 400000
+Run 4 | Time: 5.903671 s | Throughput: 67754.45 operations/sec | Accepted: 400000
+Run 5 | Time: 6.001703 s | Throughput: 66647.74 operations/sec | Accepted: 400000
+
+Median throughput: 67050.41 operations/sec
+Expected accepted messages: 400000
+Message verification: PASSED
+
+========================================
+Benchmark: Eight-thread enabled logging
+Threads: 8
+Operations per thread: 100000
+Total operations: 800000
+Repetitions: 5
+========================================
+Run 1 | Time: 11.957444 s | Throughput: 66903.93 operations/sec | Accepted: 800000
+Run 2 | Time: 12.013652 s | Throughput: 66590.91 operations/sec | Accepted: 800000
+Run 3 | Time: 12.613662 s | Throughput: 63423.30 operations/sec | Accepted: 800000
+Run 4 | Time: 15.814949 s | Throughput: 50585.05 operations/sec | Accepted: 800000
+Run 5 | Time: 15.600841 s | Throughput: 51279.29 operations/sec | Accepted: 800000
+
+Median throughput: 63423.30 operations/sec
+Expected accepted messages: 800000
+Message verification: PASSED
+
+========================================
+Benchmark: Four-thread filtered logging
+Threads: 4
+Operations per thread: 100000
+Total operations: 400000
+Repetitions: 5
+========================================
+Run 1 | Time: 0.023608 s | Throughput: 16943552.55 operations/sec | Accepted: 0
+Run 2 | Time: 0.022921 s | Throughput: 17451017.18 operations/sec | Accepted: 0
+Run 3 | Time: 0.029769 s | Throughput: 13436706.39 operations/sec | Accepted: 0
+Run 4 | Time: 0.034402 s | Throughput: 11627197.18 operations/sec | Accepted: 0
+Run 5 | Time: 0.026222 s | Throughput: 15254541.09 operations/sec | Accepted: 0
+
+Median throughput: 15254541.09 operations/sec
+Expected accepted messages: 0
+Message verification: PASSED
+
+All benchmark scenarios completed.
